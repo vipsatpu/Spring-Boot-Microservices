@@ -1,0 +1,30 @@
+# Spring properties
+spring:
+  datasource: 
+    url: jdbc:mysql://localhost:3306/cinque
+    username: root
+    password: mysql
+  jpa:
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+ 
+# OAuth Config 
+oauthconfig: 
+  clientId: cinque-client
+  clientSecret: cinque-secret
+  accessTokenUrl: http://localhost:8080/oauth/token
+  grantType: password
+  authorizationCode: authorization_code
+  refreshToken: refresh_token
+  implicit: implicit
+  scopeRead: read
+  scopeWrite: write
+  trust: trust
+  accessTokenValiditySeconds: 300
+  refreshTokenValiditySeconds: 300

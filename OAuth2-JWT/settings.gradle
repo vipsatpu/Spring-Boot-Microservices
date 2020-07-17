@@ -1,0 +1,4 @@
+rootProject.name = 'security-oAuth2-jwt'
+include 'cinque-common'
+project(':cinque-common').projectDir = file('../cinque-common')
+
