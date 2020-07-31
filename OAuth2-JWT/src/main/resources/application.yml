@@ -3,7 +3,7 @@ spring:
   datasource: 
     url: jdbc:mysql://localhost:3306/cinque?zeroDateTimeBehavior=convertToNull
     username: root
-    password: root
+    password: mysql
   jpa:
     show-sql: true
     
@@ -27,4 +27,4 @@ oauthconfig:
   scopeWrite: write
   trust: trust
   accessTokenValiditySeconds: 300
-  refreshTokenValiditySeconds: 300
+  refreshTokenValiditySeconds: 150

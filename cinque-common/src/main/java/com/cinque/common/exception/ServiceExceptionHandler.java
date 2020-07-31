@@ -21,7 +21,7 @@ import com.cinque.common.config.ApiErrorResponse;
 import com.cinque.common.util.ErrorMessageConstants;
 
 @ControllerAdvice
-public class ParameterValidationExceptionHandler extends ResponseEntityExceptionHandler{
+public class ServiceExceptionHandler extends ResponseEntityExceptionHandler{
 
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
