@@ -34,7 +34,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.cinque.common.config.ApiErrorResponse;
 import com.cinque.common.config.ApiResponse;
-import com.cinque.common.util.ApplicationMessageResource;
+import com.cinque.common.util.MessageUtils;
 import com.cinque.ojtg.config.AuthTokenInfo;
 import com.cinque.ojtg.dto.AuthenticationRequest;
 import com.cinque.ojtg.dto.AuthenticationResponse;
@@ -56,7 +56,7 @@ public class AuthenticationController {
 	Oauth2Service oauth2TokenService;
 
 	@Autowired
-	ApplicationMessageResource messageResource;
+	MessageUtils messageResource;
 
 	@Autowired
 	private TokenStore tokenStore;

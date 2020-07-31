@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ApplicationMessageResource {
+public class MessageUtils {
 
 	private Locale defaultLocale = Locale.ENGLISH;
 
